@@ -1,0 +1,31 @@
+
+.dropdown-drop {
+    width: auto;
+    position: fixed;
+    z-index: 500;
+    background: #fff;
+    box-shadow: 0 0 10px #eaeaea;
+    border-radius: 5px;
+    overflow: hidden;
+    .item-drop {
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        transition: .3s;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        display: block;
+        &:hover {
+            background: #eaeaea;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    hr {
+        width: 100%;
+        border: 1px solid #eaeaea;
+        margin-bottom: 5px;
+    }
+}

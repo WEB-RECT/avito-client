@@ -1,0 +1,54 @@
+
+.select-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    &.active {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+    svg {
+        transition: .3s;
+    }
+}
+
+.select-drop {
+    width: 100%;
+    min-width: 200px;
+    background: #fff;
+    box-shadow: 0 0 10px #eaeaea;
+    border-radius: 5px;
+    padding: 5px 0;
+    .item {
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        transition: .3s;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        &.item--active {
+            background: #eaeaea;
+        }
+        &:hover {
+            background: #eaeaea;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    hr {
+        width: 100%;
+        border: 1px solid #eaeaea;
+        margin-bottom: 5px;
+    }
+}

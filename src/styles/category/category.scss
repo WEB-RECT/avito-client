@@ -1,0 +1,93 @@
+
+.category-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-gap: 20px;
+    .filters {
+        width: 100%;
+        padding: 20px 0;
+        .category-steps {
+            margin-bottom: 20px;
+        }
+        .button-wrapper {
+            width: 100%;
+            padding: 10px 0;
+            background: #fff;
+            position: sticky;
+            left: 0;
+            bottom: 0;
+            .button {
+                width: 100%;
+                font-size: 14px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+.category-steps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &.max {
+        .category-steps-items {
+            width: 100%;
+        }
+    }
+    &.small {
+        .category-steps-items {
+            .item {
+                font-size: 14px;
+                padding: 7px 10px;
+            }
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    .button {
+        margin-bottom: 10px;
+    }
+    .category-steps-items {
+        width: 50%;
+        box-shadow: 0 0 10px #eaeaea;
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        .button {
+            svg {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .item {
+            width: 100%;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: .3s;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.active {
+                background: rgba(234, 234, 234, 0.5);
+                font-weight: 600;
+            }
+            &:hover {
+                background: rgba(234, 234, 234, 0.5);
+            }
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+

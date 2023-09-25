@@ -1,0 +1,31 @@
+
+
+.filters-field {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(234, 234, 234, 0.5);
+    .filters-field-label {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .filters-field-content {
+        width: 100%;
+        .filters-field-content-row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            font-size: 14px;
+        }
+        .form-input {
+            margin-bottom: 0;
+        }
+        .radio-row {
+            width: 100%;
+        }
+    }
+}

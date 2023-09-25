@@ -1,0 +1,98 @@
+
+.city {
+    width: 100%;
+    &-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #eaeaea;
+        padding: 20px;
+    }
+    &-content {
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        .form-input {
+            margin-bottom: 0;
+        }
+        .city-items {
+            width: 100%;
+            max-height: 500px;
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            overflow: auto;
+            padding: 20px 0;
+            .city-item {
+                width: auto;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                background: #f7f7f7;
+                cursor: pointer;
+                transition: .3s;
+                font-size: 14px;
+                &:hover {
+                    background: #eaeaea;
+                }
+                &.active {
+                    background: #009CF0;
+                    color: #fff;
+                }
+            }
+        }
+        .city-country {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            .col {
+                width: 100%;
+                .text {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .city-country-item {
+            width: 100%;
+            padding: 15px 20px;
+            transition: .3s;
+            position: relative;
+            margin-bottom: 5px;
+            cursor: pointer;
+            &:hover {
+                background: #f7f7f7;
+                &:before {
+                    opacity: 1;
+                    background: #eaeaea;
+                }
+            }
+            &.active {
+                background: rgba(0, 156, 240, 0.05);
+                &:before {
+                    opacity: 1;
+                }
+                &:hover {
+                    background: #f7f7f7;
+                    &:before {
+                        opacity: 1;
+                        background: #eaeaea;
+                    }
+                }
+            }
+            &:before {
+                content: '';
+                width: 5px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #009CF0;
+                opacity: 0;
+            }
+        }
+    }
+    .city-close {
+        cursor: pointer;
+    }
+}

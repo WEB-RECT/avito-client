@@ -1,0 +1,16 @@
+
+.modal-top {
+    padding: 30px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+}
+.modal-content {
+    width: 100%;
+}

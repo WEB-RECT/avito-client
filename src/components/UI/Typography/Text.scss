@@ -1,0 +1,23 @@
+
+.text {
+    &.text--title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    &.ellipsis--row {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    &.ellipsis--column-2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    &--gray {
+        color: #999999;
+    }
+}

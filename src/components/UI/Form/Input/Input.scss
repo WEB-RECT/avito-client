@@ -1,0 +1,100 @@
+
+.form-input {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    &.form-input--active {
+        &.input--error {
+            .form-input-title {
+                border: 1px solid red;
+                border-bottom: 1px solid transparent;
+            }
+        }
+        .form-input-title {
+            bottom: unset;
+            top: -19px;
+            transform: translate(0, 0%);
+            left: 0;
+            border: 1px solid #eaeaea;
+            border-bottom: 1px solid transparent;
+            padding: 3.5px 5px;
+            font-size: 10px;
+            color: rgba(18, 18, 18, 1);
+            &.form-input-title--textarea {
+                top: -19px;
+                transform: translate(0, 0%);
+            }
+        }
+        .input, .textarea {
+            border-radius: 0 5px 5px 5px;
+        }
+    }
+    &.input--error {
+        .input, .textarea {
+            border: 1px solid red;
+        }
+    }
+    &.form-input--small {
+        &.form-input--active {
+            .form-input-title {
+                font-size: 8px;
+            }
+        }
+        .form-input-title {
+            font-size: 10px;
+        }
+        .input, .textarea {
+            padding: 10px;
+            font-size: 12px;
+            &::placeholder {
+                font-size: 12px;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.form-input-title {
+    position: absolute;
+    pointer-events: none;
+    font-size: 14px;
+    left: 12px;
+    top: 25px;
+    height: 20px;
+    padding: 0;
+    background: #fff;
+    transition: .3s;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid transparent;
+    color: rgba(18, 18, 18, 0.5);
+    transform: translate(0, -50%);
+    &.form-input-title--textarea {
+        bottom: unset;
+        top: 0;
+        transform: translate(0, 50%);
+    }
+}
+.input, .textarea {
+    width: 100%;
+    padding: 15px;
+    line-height: 1;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    transition: .3s;
+}
+.textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.form-input-error {
+    color: red;
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+}

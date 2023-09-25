@@ -1,0 +1,39 @@
+
+.profile-menu {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: sticky;
+    top: 20px;
+    .profile-menu-user {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+    .profile-menu-list {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .item {
+            width: 100%;
+            margin-bottom: 10px;
+            transition: .3s;
+            padding: 7.5px 10px;
+            border-radius: 5px;
+            background: rgba(234, 234, 234, 0.5);
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                background: #eaeaea;
+            }
+            &.active {
+                background: #009CF0;
+                color: #fff;
+            }
+        }
+    }
+}
